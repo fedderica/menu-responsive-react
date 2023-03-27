@@ -22,3 +22,35 @@
 .nav_toggle{
     display: none;
 }
+
+@media (max-width: 768px) {
+    .nav_items{
+        position: absolute;
+        top: 60px;
+        Left: 0;
+        background: orange;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: -webkit-fill-available;
+        transition: 0.3s ease all;
+
+    }
+    .nav_toggle{
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    
+    .nav_toggle span{
+        width: 30px;
+        height: 4p;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+}
